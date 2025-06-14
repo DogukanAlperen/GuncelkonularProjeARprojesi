@@ -1,7 +1,8 @@
 🧠 ARRacingGame: Artırılmış Gerçeklik Tabanlı Mobil Yarış Oyunu
 🎮 Oyun Konsepti
 ARRacingGame, Unity ve AR Foundation kullanılarak geliştirilen, oyuncunun fiziksel dünyasını dijital yarış pistine dönüştüren artırılmış gerçeklik (AR) tabanlı bir mobil yarış oyunudur.
-
+Projenin tanıtım videosu bu linkte paylaşılmıştır;
+https://youtu.be/kp92tWjbj8I
 
 |Demos||
 |---|---|
