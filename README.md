@@ -50,6 +50,31 @@ Physics & Rigidbody Sistemi	Araç sürüş fiziği, hızlanma ve yönlendirme ko
 UI Sistemleri	Joystick, görev panelleri ve görsel geri bildirimler için.
 Shader Optimization	AR görüntüsü için ARCameraBackground ve URP uyumlu materyaller.
 
+## ⚙️ Kurulum Rehberi
+
+🔧 Detaylı bilgi için [INSTALLATION.md](INSTALLATION.md) dosyasına bakınız.
+
+### Kısa Kurulum Adımları:
+1. Unity Hub üzerinden projeyi açın (2021.3.x veya 2022.x).
+2. Gerekli bağımlılıkları yükleyin (AR Foundation, ARCore XR Plugin).
+3. Build Settings üzerinden `Android` platformunu seçin.
+4. `MainGameAR_AR_Foundation.unity` sahnesini ekleyip build alın.
+5. Cihazınıza yükleyip çalıştırın.
+
+---
+
+## 🚀 Kullanım Talimatları
+
+📘 Detaylı kullanım için [USER_MANUAL.md](USER_MANUAL.md) dosyasına göz atın.
+
+### Temel Adımlar:
+- Uygulamayı çalıştırın ve kamera izni verin.
+- Düz bir yüzeye telefonu tutarak pist yerleşimini gerçekleştirin.
+- Joystick veya eğim (tilt) kontrolleri ile aracı yönlendirin.
+- Checkpoint’leri geçerek görevleri tamamlayın.
+
+---
+
 🛡️ Güvenlik & Uyum
 AR kamera erişimi için Android manifest’e özel izinler eklenmiştir.
 
