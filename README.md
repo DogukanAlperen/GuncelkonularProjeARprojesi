@@ -1,65 +1,49 @@
-🧠 ARRacingGame: Artırılmış Gerçeklik Tabanlı Mobil Yarış Oyunu
-🎮 Oyun Konsepti
-ARRacingGame, Unity ve AR Foundation kullanılarak geliştirilen, oyuncunun fiziksel dünyasını dijital yarış pistine dönüştüren artırılmış gerçeklik (AR) tabanlı bir mobil yarış oyunudur.
-Projenin tanıtım videosu bu linkte paylaşılmıştır;
-https://youtu.be/kp92tWjbj8I
+# 🧠 ARRacingGame: Artırılmış Gerçeklik Tabanlı Mobil Yarış Oyunu
 
-|Demos||
-|---|---|
-|<img src="https://github.com/dilmerv/ARRacingGame/blob/master/docs/images/demo_1.gif" width="300">|<img src="https://github.com/dilmerv/ARRacingGame/blob/master/docs/images/demo_2.gif" width="300">|
-|<img src="https://github.com/dilmerv/ARRacingGame/blob/master/docs/images/demo_3.gif" width="300">|<img src="https://github.com/dilmerv/ARRacingGame/blob/master/docs/images/demo_4.gif" width="300">|
+Unity ve AR Foundation kullanılarak geliştirilen bu mobil oyun, oyuncunun fiziksel ortamını dijital yarış pistine dönüştüren bir artırılmış gerçeklik (AR) deneyimi sunar.
 
-Oyuncu, gerçek yüzeyde oluşturulan pistte aracını sürer, engelleri aşar ve görev tabanlı ilerlemeyle deneyimini zenginleştirir. Proje özellikle eğitsel AR uygulamaları, çocuklara yönelik etkileşimli oyunlar, ve AR geliştirici örnekleri için tasarlanmıştır.
+🎥 [Tanıtım Videosu (YouTube)](https://youtu.be/kp92tWjbj8I)
 
-🧩 Oyun Özellikleri
-🚗 Oyun Başlangıcı & AR Yerleşimi
-Oyuncu, telefonu fiziksel yüzeye tutar ve yarış pistini artırılmış gerçeklik ortamında yerleştirir.
+---
 
-Pist zemine sabitlenir ve fizik motoru aktif hale gelir.
+## 🎯 Projenin Amacı ve Hedef Kitlesi
 
-AR destekli eğitim ekranı oyuncuyu yönlendirir.
+Bu proje;
+- AR tabanlı oyun geliştirme süreçlerini öğrenmek isteyen geliştiricilere,
+- Eğitsel oyun içeriği sunmak isteyen eğitmenlere,
+- AR destekli mobil oyunlara ilgi duyan genel oyuncu kitlesine hitap etmektedir.
 
-🕹️ Kontroller
-Joystick veya cihazın ivmeölçer sensörü (tilt) ile aracın yönlendirilmesi sağlanır.
+---
 
-Aracın ivmesi ve yönü fizik motoru ile yönetilir (Rigidbody, WheelCollider gibi).
+## 💻 Kullanılan Teknolojiler ve Framework’ler
 
-🎯 Oynanış Dinamikleri
-Oyuncu gerçek dünya üzerinde sanal pistte ilerler.
+| Teknoloji | Açıklama |
+|----------|----------|
+| Unity (2021.3.x veya 2022.x URP) | Geliştirme ortamı |
+| AR Foundation | AR oturumu başlatma, yüzey algılama |
+| ARCore XR Plugin | Android cihazlarla entegrasyon |
+| XR Plugin Management | ARCore kontrolü |
+| URP | Performans dostu render altyapısı |
+| Rigidbody & WheelCollider | Araç fiziği |
+| UI System | Joystick, butonlar, görev panelleri |
+| Shader Optimization | AR Camera Background & URP uyumlu shader'lar |
 
-Pistte checkpoint’ler, engeller, hızlandırıcılar ve yön değiştirici bölgeler yer alır.
-
-Oyuncu, hız kontrolü ve manevra yaparak pist dışına çıkmadan ilerlemelidir.
-
-🧠 Görev ve Gelişim Mekanikleri
-Not: Bu bölüm videoda vurgulanabilir – “Eğitsel genişletme opsiyonu olarak düşünülmüştür.”
-
-Pist üzerinde görev istasyonları tanımlanabilir (checkpoint ile eşleştirilmiş).
-
-Örnek görev: "Belirli sürede bitiş çizgisine ulaş", "X adet hızlandırıcı topla".
-
-Oyunun bu bölümü kolayca genişletilebilir (ScriptableObject ile görev tanımı yapılabilir).
-
-💡 Kullanılan Modüller & Teknolojiler
-Modül	Açıklama
-AR Foundation	AR oturumu başlatır, çevreyi algılar ve yüzey yerleştirme sağlar.
-ARCore XR Plugin	Android cihazlarda AR Foundation ile entegrasyonu sağlar.
-XR Plugin Management	ARCore ve diğer AR altyapılarının cihaz bazlı kontrolünü sağlar.
-URP (Universal Render Pipeline)	Hafif, mobil uyumlu ve performans odaklı render altyapısı.
-Physics & Rigidbody Sistemi	Araç sürüş fiziği, hızlanma ve yönlendirme kontrolleri için.
-UI Sistemleri	Joystick, görev panelleri ve görsel geri bildirimler için.
-Shader Optimization	AR görüntüsü için ARCameraBackground ve URP uyumlu materyaller.
+---
 
 ## ⚙️ Kurulum Rehberi
 
-🔧 Detaylı bilgi için [INSTALLATION.md](INSTALLATION.md) dosyasına bakınız.
+🔧 Detaylı kurulum için [INSTALLATION.md](INSTALLATION.md) dosyasına bakınız.
 
 ### Kısa Kurulum Adımları:
-1. Unity Hub üzerinden projeyi açın (2021.3.x veya 2022.x).
-2. Gerekli bağımlılıkları yükleyin (AR Foundation, ARCore XR Plugin).
-3. Build Settings üzerinden `Android` platformunu seçin.
-4. `MainGameAR_AR_Foundation.unity` sahnesini ekleyip build alın.
-5. Cihazınıza yükleyip çalıştırın.
+
+1. Unity Hub ile projeyi açın (2021.3.x veya 2022.x URP).
+2. Gerekli paketleri yükleyin:
+   - AR Foundation
+   - ARCore XR Plugin
+   - XR Plugin Management
+3. `Build Settings > Android` seçin.
+4. `MainGameAR_AR_Foundation.unity` sahnesini ekleyin.
+5. `Build and Run` diyerek cihazda çalıştırın.
 
 ---
 
@@ -67,26 +51,76 @@ Shader Optimization	AR görüntüsü için ARCameraBackground ve URP uyumlu mate
 
 📘 Detaylı kullanım için [USER_MANUAL.md](USER_MANUAL.md) dosyasına göz atın.
 
-### Temel Adımlar:
-- Uygulamayı çalıştırın ve kamera izni verin.
-- Düz bir yüzeye telefonu tutarak pist yerleşimini gerçekleştirin.
-- Joystick veya eğim (tilt) kontrolleri ile aracı yönlendirin.
-- Checkpoint’leri geçerek görevleri tamamlayın.
+### Temel Kullanım:
+
+- Uygulamayı açın ve kamera izni verin.
+- Telefonu düz bir yüzeye tutarak pist yerleşimini tamamlayın.
+- Joystick veya tilt sensörü ile aracı yönetin.
+- Checkpoint'leri geçin, görevleri tamamlayın.
 
 ---
 
-🛡️ Güvenlik & Uyum
-AR kamera erişimi için Android manifest’e özel izinler eklenmiştir.
+## 🧩 Oyun Özellikleri
 
-Uygulama, mobil cihazlarda performans dostu olacak şekilde optimize edilmiştir.
+- 🛞 **AR Pist Yerleşimi**: Fiziksel yüzeye pist sabitlenir.
+- 🎮 **Kontroller**: Joystick veya cihaz eğimi ile kontrol.
+- 🔧 **Fizik Sistemi**: Rigidbody ve WheelCollider kullanımı.
+- 🗺️ **Oynanış Dinamikleri**: Engeller, hızlandırıcılar, checkpoint’ler.
+- 🎯 **Görev Sistemi**: ScriptableObject ile tanımlı görevler.
+- 👨‍🏫 **Eğitsel Yapı**: Geliştirilebilir görev tabanlı yapı.
 
-AR kurulumu başlamadan önce kullanıcıya alan güvenliği uyarısı verilebilir (eklenebilir modül).
+---
 
-📈 Geliştirme Notları
-Unity Sürümü: 2021.3.x LTS veya 2022+ URP destekli
+## 🧠 AR Özellikleri
 
-Platform Desteği: Android (ARCore), iOS (ARKit destekli sürüm geliştirilebilir)
+| Özellik | Açıklama |
+|--------|----------|
+| AR Foundation | Oturum başlatma ve yüzey algılama |
+| ARCore | Android cihazlarda AR destek sağlar |
+| URP | Gerçekçi ve optimize görüntüleme |
+| AR Kamera | Gerçek dünyayı ekran arkasına aktarır |
+| Gerekli Donanım | ARCore destekli Android cihaz, kamera erişimi |
 
-Sahne Dosyası: MainGameAR_AR_Foundation.unity
+---
 
-Yapılandırma: Assets/Scenes/, Assets/Scripts/, Assets/Art/, Assets/AR/
+## 📸 Ekran Görüntüleri
+
+> 📁 Görseller `screenshots/` klasöründe yer almalı
+
+![Ana Menü](screenshots/menu.png)
+![Pist Yerleşimi](screenshots/track.png)
+![Yarış Başlangıcı](screenshots/start.png)
+![Oynanış Ekranı](screenshots/gameplay.png)
+![Görev Tamamlandı](screenshots/mission.png)
+
+---
+
+## 📱 APK Dosyası
+
+📥 Uygulamanın APK dosyası `apk/` klasöründe yer almalıdır.
+
+Alternatif olarak:
+👉 [Google Drive Üzerinden İndir](https://drive.google.com/your-apk-link) *(örnek link)*
+
+---
+
+## 🛡️ Güvenlik ve Performans
+
+- Kamera erişim izinleri `AndroidManifest.xml` içinde tanımlanmıştır.
+- Cihaz uyumluluğu ARCore destekli Android cihazlardır.
+- Uygulama düşük cihazlarda dahi stabil çalışacak şekilde optimize edilmiştir.
+- Oyun öncesi fiziksel ortam güvenliği için uyarı gösterilebilir.
+
+---
+
+## 📈 Geliştirme Notları
+
+- **Unity Sürümü:** 2021.3.x LTS / 2022.x URP
+- **Platform Desteği:** Android (ARCore) – iOS uyumu geliştirilebilir
+- **Ana Sahne:** `MainGameAR_AR_Foundation.unity`
+- **Klasör Yapısı:** `src/Assets`, `src/Scripts`, `src/AR` şeklinde organize edilmiştir
+
+---
+
+## 📂 Proje Yapısı
+
